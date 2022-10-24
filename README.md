@@ -13,9 +13,17 @@
 ## <u><b>Steps</u></b>
 
 1. Once the data has been processed and the best model had been selected <b>[Random Forest Classifier - 94%]</b>
+
 2. A GitHub repository was created with the Jupyter notebook and the saved model.
+
 3. The repository was cloned by entering the following command in the command prompt.
     <i><pre><code> git clone https://github.com/ibvhim/Warts_Immunotherapy.git </pre></code></i>
+
 4. Data was imported into VSCode and a new enviroment was created.
     <i><pre><code> conda create -p venv python==3.7 -y </pre></code></i>
-5. 
+
+5. A `requirements.txt` file was created, which contained all of the required libraries used in the jupyter notebook.
+    <i><pre><code> pip install -r requirements.txt </pre></code></i>
+    
+6. 
+
