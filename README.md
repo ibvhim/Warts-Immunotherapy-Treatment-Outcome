@@ -1,4 +1,4 @@
-# <u><b>Warts_Immunotherapy</u></b>
+# <u><b>Warts Immunotherapy</u></b>
 <b> Immunotherapy uses the patient's own immune system to fight the warts. This treatment is used when the warts remain despite other treatments. One type of immunotherapy involves applying a chemical, such as diphencyprone (DCP), to the warts. A mild allergic reaction occurs around the treated warts. <u>This is an industry ready project that allows you to enter your details and confirm if your warts the patient has been infected with is treatable using immunotherapy. </b></u>
 
 ***
