@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Warts Immunotherapy</title>
+</head>
+
+<body>
+    <div class="login">
+        <h1>Warts Immunotherapy Treatment Outcome Prediction</h1>
+        <!-- The following code accepts input for the model-->
+        <form action="{{url_for('predict')}}"method="post">
+            <input type="radio" id='Male' name="Gender" placeholder="Gender" required="required" />
+            <label for='Gender'>Male</label><br>
+            <input type="radio" id='Female' name="Gender" placeholder="Gender" required="required" />
+            <label for='Gender'>Female</label><br>
+            <script type="text/javascript"> 
+                document.getElementById("Male").setAttribute('Male',1);
+                document.getElementById("Male").setAttribute('Female',2);
+            </script>
+            <input type="text" name="age" placeholder="Age" required="required" /><br>
+            <input type="text" name="Time" placeholder="Time elapsed" required="required" /><br>
+            <input type="text" name="Number_of_Warts" placeholder="Number of Warts" required="required" /><br>
+            <input type="text" name="Type" placeholder="Type of Wart" required="required" /><br>
+            <input type="text" name="Area" placeholder="Area covered by warts (in mm)" required="required" /><br>
+            <input type="text" name="induration_diameter" placeholder="Induration Diameter (in mm)" required="required" /><br>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+
+        <br>
+        <br>
+    </div>
+    {{prediction_text}}
+    
+</body>
+</html>

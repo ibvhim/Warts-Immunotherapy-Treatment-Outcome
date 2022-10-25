@@ -1,6 +1,9 @@
-Flask
+flask
 sklearn
 pandas
 matplotlib
 seaborn
-numpy
+numpy 
+# pickle
+statsmodels
+jsonify
