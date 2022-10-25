@@ -30,23 +30,22 @@ def home():
 @app.route('/predict_',methods=['POST'])
 def predict():
     # takes input
-    data = [request.form.values()] 
+    data = [float(x) for x in request.form.values()] 
 
-    # # normalizes data
-    # final_input= scaler.transform(np.array(data).reshape(1,-1))
-    # print (final_input)
+    # normalizes data
+    final_input= scaler.transform(np.array(data).reshape(1,-1))
+    print (final_input)
 
-    # # predicts the outcome
-    # output = model.predict(final_input)[0]
-    # outcome = ''
-    # # outcome text
-    # if output == 1:
-    #     outcome = "Congratulations! According to the model, your warts can be removed using Immunotherapy!"
-    # else:
-    #     outcome = "According to our model Immunotherapy will not treat your warts. Unfortuantely, you might have to look for alternative treatment methods."
+    # predicts the outcome
+    output = model.predict(final_input)[0]
+    outcome = ''
+    # outcome text
+    if output == 1:
+        outcome = "Congratulations! According to the model, your warts can be removed using Immunotherapy!"
+    else:
+        outcome = "According to our model Immunotherapy will not treat your warts. Unfortuantely, you might have to look for alternative treatment methods."
     
     # displays outcome 
-    outcome = [x for x in data]
     return render_template("home.html",prediction_text=outcome) 
 
 if __name__=="__main__":
