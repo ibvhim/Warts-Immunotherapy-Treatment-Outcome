@@ -4,6 +4,6 @@ pandas
 matplotlib
 seaborn
 numpy 
-# pickle
 statsmodels
 jsonify
+gunicorn
