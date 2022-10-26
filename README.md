@@ -8,6 +8,7 @@
 - [HerokuApp](https://www.heroku.com)
 - [VS Code IDE](https://code.visualstudio.com/)
 - [GitCLI](https://git-scm.com/docs/gitcli)
+- [Heroku](https://heroku.com)
 
 ***
 ## <u><b>Steps</u></b>
@@ -25,5 +26,21 @@
 5. A `requirements.txt` file was created, which contained all of the required libraries used in the jupyter notebook.
     <i><pre><code> pip install -r requirements.txt </pre></code></i>
     
-6. 
+6. Once the Flask API [`app.py`], HTML [`index.html`] page, `Dockerfile` and the `main.yaml` files were created, the page was deployed in the local server to test the application.
+    <i><pre><code> python app.py </pre></code></i>
+   
+7.  The files were commited to the GitHub repository and then deployed in Heroku
+    <i><pre><code> git add . </pre></code></i>
+    <i><pre><code> git commit -m "changes commited" </pre></code></i>
+    <i><pre><code> git push origin main </pre></code></i>
+    
+8. The docker container was therefore succesfully deployed in Heroku!
+
+***
+## <u><b>Snapshots</u></b>
+
+
+
+    
+
 
