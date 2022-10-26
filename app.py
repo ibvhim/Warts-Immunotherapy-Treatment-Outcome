@@ -12,7 +12,7 @@ scaler = pickle.load(open('scaling.pkl','rb'))
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return render_template('index.html')
 
 # @app.route('/predict_api',methods=['POST'])
 # def predict_api():
@@ -39,6 +39,7 @@ def predict():
     # predicts the outcome
     output = model.predict(final_input)[0]
     outcome = ''
+
     # outcome text
     if output == 1:
         outcome = "Congratulations! According to the model, your warts can be removed using Immunotherapy!"
@@ -46,7 +47,7 @@ def predict():
         outcome = "According to our model Immunotherapy will not treat your warts. Unfortuantely, you might have to look for alternative treatment methods."
     
     # displays outcome 
-    return render_template("home.html",prediction_text=outcome) 
+    return render_template("index.html",prediction_text=outcome) 
 
 if __name__=="__main__":
     app.run(debug=True)
