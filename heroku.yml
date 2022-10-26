@@ -3,4 +3,3 @@ build:
     web: Dockerfile
 run:
   web: gunicorn app:app
-$ heroku stack:set container
